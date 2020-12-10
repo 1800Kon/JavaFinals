@@ -36,3 +36,12 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 
 * Flights
   * Date and time of flight
+
+
+##Assignment:
+The assignment is to develop software for an Airport for a private lottery winner. 
+The application should print the profits per flight (People in the flight * ticket prices) - ((Fuel price/km)*distance)). 
+Through the system it should be possible to book flights via a ticket and attend it.
+Lastly the software should keep a flight history of all flights, and a list of names with passengers
+and their flight details.
+
