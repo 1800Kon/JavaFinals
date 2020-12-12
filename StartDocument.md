@@ -59,3 +59,14 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 * Number of economy class seats / int / X
 * Person name / String / X
 * Person date of birth / Date / X
+
+## Outputs (Follows Case / Type / Conditions format)
+* getAllFlights() / Arraylist of Flights / X
+* getProfits() / double / X
+* getExpenses() / double / X
+* getAllFlightHistory() / Arraylist of Flights / X
+* getFlightHistory() / Arraylist of Flights / X
+* findCrew() / Arraylist of Employees / X
+* getFlightCosts() / Double / X
+* checkTicketAvailability() / Boolean / X
+* calculateCosts() / Double / X
