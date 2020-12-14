@@ -117,6 +117,7 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 | passenger1.addBaggage()    | baggage1     | "The baggage was added"    |
 | passenger1.purchaseTicket()    | Flight1     | "The ticket was bought"    |
 | passenger1.purchaseTicket()    | Flight1     | "You already bought a ticket"    |
+| passenger3.purchaseTicket()    | Flight1     | "Flight1 is currently fully booked"    |
 | flight1.checkKTicketAvailability()    | X     | False    |
 | flight1.getPlaneCost()    |   Flight1   |  30000   |
 | flight2.getFLightCost()    | Boeing747     | 666660    |
