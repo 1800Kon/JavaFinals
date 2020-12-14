@@ -24,11 +24,6 @@ and their flight details.
 - Profit
 - Expenses
 
-#Classes:
-- 
-## Stuff for interview
-Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-catch (First class with economy ticket), collections.
-
 ## Classes
 * Airport
 * Airline
