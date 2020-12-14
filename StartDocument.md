@@ -39,6 +39,7 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 * Flight number / String / Must not be used by another flight
 * Departure date / DateTime / Must be in the future
 * Flight distance / Double / Can't be negative
+* Destination / String / X
 * Plane brand / String / X
 * Plane model / String / X
 * Plane capacity / String / X
@@ -60,7 +61,7 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 * calculateCosts() / Double / X
 
 ## UML
-![UML](https://i.imgur.com/RpQ1SiV.png)
+![UML](https://i.imgur.com/2tWzWAY.png)
 
 ## Test Data
 
@@ -114,9 +115,17 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 | Us.getAllFLights()    | X     | Flight1    |
 | Us.getProfits(Assuming a flight cost of 1000 and a 1500 ticket margin)    | X     | 500    |
 | passenger1.addBaggage()    | baggage1     | "The baggage was added"    |
-| passenger1.purchaseTicket()    | Ticket1     | "The ticket was bought"    |
-| passenger1.purchaseTicket()    | Ticket1     | "You already bought a ticket"    |
-| flight1.getFlightCost()    |   Flight1   |  30000   |
+| passenger1.purchaseTicket()    | Flight1     | "The ticket was bought"    |
+| passenger1.purchaseTicket()    | Flight1     | "You already bought a ticket"    |
+| flight1.checkKTicketAvailability()    | X     | False    |
+| flight1.getPlaneCost()    |   Flight1   |  30000   |
 | flight2.getFLightCost()    | Boeing747     | 666660    |
-| Delta    | Boeing747     | Flight1    |
-| Delta    | Boeing747     | Flight1    |
+| Us.getExpenses()    | X     | 30000    |
+| Delta.addEmployee()    | mario     | "Mario has been added to Delta"    |
+| Delta.addEmployee()  | mario     | "Mario is already in Delta"    |
+| Delta.findCrew()    | X     | "There isnt enough crew for a flight"    |
+| Delta.findCrew(Assuming enough crew)    | X     | Arraylist of employees    |
+| Flight1.arriveToDestination()    | X     | Flight1 has arrived    |
+| Flight1.getFlightCosts(Assuming a total salary of 5000)    | X     | 35000    |
+| Us.getAllFlightHistory()    | X     | Flight1    |
+| Us.getAllFlightHistory(Assuming FLight1, Flight2, and Flight3 have been completed)    | X     | Flight1, FLight2, Flight3    |
