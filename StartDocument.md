@@ -70,3 +70,6 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 * getFlightCosts() / Double / X
 * checkTicketAvailability() / Boolean / X
 * calculateCosts() / Double / X
+
+## UML
+![UML](https://i.imgur.com/RpQ1SiV.png)
