@@ -13,6 +13,19 @@ Through the system it should be possible to book flights via a ticket and attend
 Lastly the software should keep a flight history of all flights, and a list of names with passengers
 and their flight details.
 
+#Nouns
+- Airport
+- Airline
+- Plane
+- Employee
+- Passeneger
+- Baggage
+- Ticket
+- Profit
+- Expenses
+
+#Classes:
+- 
 ## Stuff for interview
 Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-catch (First class with economy ticket), collections.
 
@@ -86,6 +99,13 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 | Passenger2       | 08/03/2001     | Ticket2     | 1 valid 1 too big     |
 | Passenger3       | 08/03/2001     | Ticket1     | none    |
 
+### Baggage
+| Name   |  Bag1 | Bag2 |
+|     :---:      |     :---:      |     :---:      |
+| Passenger1     | 30 x  30 x 35   | 40 x  20 x 35    | 
+| Passenger2       | 30 x  30 x 25     | 30 x  30 x 35     | 
+| Passenger3       | x     | x     | 
+
 ### Flight
  Flight number  | Plane | Date  | Distance | Destination |
 |     :---:      |     :---:      |     :---:      |     :---:      |      :---:      |
@@ -94,11 +114,11 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 | Flight3       | Airbus312     | 04/12/20     | 1232    | DunnoMan    |
 
 ### Ticket
-|Ticket name| Type  | Price | Flight  | Passenger |
-|     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
-| Ticket1     | First Class     | 100     | Flight1    | Passenger1    |
-| Ticket2     | Economy Class       | 50     | Flight1     | Passenger2     |
-| Ticket3     | Economy Class       | 50     | Flight2     | Passenger3     |
+|Ticket name| Type  | Price | Flight  | Passenger | maxBaggageHeight |maxBaggageWidth |maxBaggageLength |
+|     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |  :---:      | :---:      | :---:      |
+| Ticket1     | First Class     | 100     | Flight1    | Passenger1    | 80    | 45    |35    |
+| Ticket2     | Economy Class       | 50     | Flight1     | Passenger2     |60     |30     |25     |
+| Ticket3     | Economy Class       | 50     | Flight2     | Passenger3     |60    |30    |25    |
 
 ### Plane
 |Plane name| Brand  | Model | Capacity  | fuelConsumptionPerKm | Number of first class seats | Number of economy class seats |
@@ -125,8 +145,10 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 | Delta.addEmployee()    | mario     | "Mario has been added to Delta"    |
 | Delta.addEmployee()  | mario     | "Mario is already in Delta"    |
 | Delta.findCrew()    | X     | "There isnt enough crew for a flight"    |
+| Delta.cancelFlight()    | X     | "It is announced that the flight is canceled"    |
+| Delta.refundTickets()    | X     | "You were refunded the ticket money"    |
 | Delta.findCrew(Assuming enough crew)    | X     | Arraylist of employees    |
-| Flight1.arriveToDestination()    | X     | Flight1 has arrived    |
+| Flight1.arriveToDestination()    | X     | "Flight1 has arrived in Peru"   |
 | Flight1.getFlightCosts(Assuming a total salary of 5000)    | X     | 35000    |
 | Us.getAllFlightHistory()    | X     | Flight1    |
 | Us.getAllFlightHistory(Assuming FLight1, Flight2, and Flight3 have been completed)    | X     | Flight1, FLight2, Flight3    |
