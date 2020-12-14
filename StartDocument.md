@@ -13,7 +13,7 @@ Through the system it should be possible to book flights via a ticket and attend
 Lastly the software should keep a flight history of all flights, and a list of names with passengers
 and their flight details.
 
-#Nouns
+# Nouns
 - Airport
 - Airline
 - Plane
