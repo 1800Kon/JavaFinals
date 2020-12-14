@@ -26,24 +26,12 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
   * Pilot
   * Stewardess
 * Baggage
+  * Hand luggage
+  * Suitcase
 * Ticket
   * First class ticket
   * Economy class ticket
-
-## Properties
-* Airport
-  * Name
-  * Location
-  * Airlines
   
-* Airlines
-  * Planes
-  * Employees
-  * Flights List
-
-* Flights
-  * Date and time of flight
-
 ## Inputs (Follows Case / Type / Conditions format)
 * Airport name / String / X
 * Airport location / String / X
@@ -73,3 +61,47 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 
 ## UML
 ![UML](https://i.imgur.com/RpQ1SiV.png)
+
+## Test Data
+
+### Airport
+| Name  | Location | Airlines  |
+|     :---:      |     :---:      |     :---:      |
+| US    | United States     | Delta    |
+| RD       | Dominican Republic     | RdAirline, RdAirline2     |
+| CoolAirport       | Madrid     | X     |
+
+### Airline
+| Name  | Planes | flights  |
+|     :---:      |     :---:      |     :---:      |
+| Delta    | Boeing747     | Flight1    |
+| Nitro       | Airbus312, Boeing 747     | Flight2     |
+| Turbo       | Boeing7476     | X     |
+
+### Passenger
+| Name  | DOB | Ticket  | bags |
+|     :---:      |     :---:      |     :---:      |     :---:      |
+| Passenger 1     | 08/03/2001     | Ticket1    | 2 valid    |
+| Passenger 2       | 08/03/2001     | Ticket2     | 1 valid 1 too big     |
+| Passenger 3       | 08/03/2001     | Ticket1     | none    |
+
+### Flight
+ Flight number  | Plane | Date  | Distance | Destination |
+|     :---:      |     :---:      |     :---:      |     :---:      |      :---:      |
+| Flight1     | Boeing747     | 14/12/20    | 3000    | Peru    |
+| Flight2       | Boeing7476     | 14/12/20     | 22222     | Santo Domingo    |
+| Flight3       | Airbus312     | 04/12/20     | 1232    | DunnoMan    |
+
+### Ticket
+|Ticket name| Type  | Price | Flight  | Passenger |
+|     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
+| Ticket1     | First Class     | 100     | Flight1    | Passenger1    |
+| Ticket 2     | Economy Class       | 50     | Flight1     | Passenger2     |
+| Ticket 3     | Economy Class       | 50     | Flight2     | Passenger3     |
+
+### Plane
+|Plane name| Brand  | Model | Capacity  | fuelConsumptionPerKm | Number of first class seats | Number of economy class seats |
+|     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
+| Plane 1     | Boeing    | 747     | 1    | 10    | 1    | 0    | 
+| Plane 2     | Airbus       | 312     | 2     | 20     | 1    | 1    |
+| Plane 3     | Boeing       | 7476     | 3     | 30     | 2   | 1    |
