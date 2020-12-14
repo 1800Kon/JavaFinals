@@ -81,9 +81,9 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 ### Passenger
 | Name  | DOB | Ticket  | bags |
 |     :---:      |     :---:      |     :---:      |     :---:      |
-| Passenger 1     | 08/03/2001     | Ticket1    | 2 valid    |
-| Passenger 2       | 08/03/2001     | Ticket2     | 1 valid 1 too big     |
-| Passenger 3       | 08/03/2001     | Ticket1     | none    |
+| Passenger1     | 08/03/2001     | Ticket1    | 2 valid    |
+| Passenger2       | 08/03/2001     | Ticket2     | 1 valid 1 too big     |
+| Passenger3       | 08/03/2001     | Ticket1     | none    |
 
 ### Flight
  Flight number  | Plane | Date  | Distance | Destination |
@@ -96,12 +96,27 @@ Abstract (Person), subclass from asbtract, Interface (Ticket), 5 classes, try-ca
 |Ticket name| Type  | Price | Flight  | Passenger |
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
 | Ticket1     | First Class     | 100     | Flight1    | Passenger1    |
-| Ticket 2     | Economy Class       | 50     | Flight1     | Passenger2     |
-| Ticket 3     | Economy Class       | 50     | Flight2     | Passenger3     |
+| Ticket2     | Economy Class       | 50     | Flight1     | Passenger2     |
+| Ticket3     | Economy Class       | 50     | Flight2     | Passenger3     |
 
 ### Plane
 |Plane name| Brand  | Model | Capacity  | fuelConsumptionPerKm | Number of first class seats | Number of economy class seats |
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
-| Plane 1     | Boeing    | 747     | 1    | 10    | 1    | 0    | 
+| Plane 1     | Boeing    | 747     | 1    | 10    | 1    | 0    |
 | Plane 2     | Airbus       | 312     | 2     | 20     | 1    | 1    |
 | Plane 3     | Boeing       | 7476     | 3     | 30     | 2   | 1    |
+
+## Test Plan
+| Method  | Input | Output  |
+|     :---:      |     :---:      |     :---:      |
+| US.addAirline()    | Delta     | "Delta was added"    |
+| Us.addAirline()    | Delta     | "Delta is already inside the airport"    |
+| Us.getAllFLights()    | X     | Flight1    |
+| Us.getProfits(Assuming a flight cost of 1000 and a 1500 ticket margin)    | X     | 500    |
+| passenger1.addBaggage()    | baggage1     | "The baggage was added"    |
+| passenger1.purchaseTicket()    | Ticket1     | "The ticket was bought"    |
+| passenger1.purchaseTicket()    | Ticket1     | "You already bought a ticket"    |
+| flight1.getFlightCost()    |   Flight1   |  30000   |
+| flight2.getFLightCost()    | Boeing747     | 666660    |
+| Delta    | Boeing747     | Flight1    |
+| Delta    | Boeing747     | Flight1    |
