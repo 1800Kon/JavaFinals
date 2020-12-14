@@ -1,4 +1,4 @@
-# JavaFinals
+# JavaFinals Start Document
 ## Project definition
 This project will consist of an airport managing system. It must be able to do the following:
 * Book a flight
@@ -12,17 +12,6 @@ The application should print the profits per flight (People in the flight * tick
 Through the system it should be possible to book flights via a ticket and attend it.
 Lastly the software should keep a flight history of all flights, and a list of names with passengers
 and their flight details.
-
-# Nouns
-- Airport
-- Airline
-- Plane
-- Employee
-- Passeneger
-- Baggage
-- Ticket
-- Profit
-- Expenses
 
 ## Classes
 * Airport
